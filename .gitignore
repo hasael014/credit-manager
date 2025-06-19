@@ -9,3 +9,5 @@
 
 # Ignorar archivos de configuración
 config.json
+
+.gitignore
