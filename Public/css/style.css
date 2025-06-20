@@ -1,18 +1,4 @@
-<!-- Login para el sistema -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
-</head>
-
-<body>
-
-    <style>
-        :root {
+:root {
             --color: purple;
         }
 
@@ -24,7 +10,7 @@
         }
 
         body {
-            background-color: whitesmoke;
+            background-color: rgba(249 250 251 1);
             min-height: 100dvh;
             display: flex;
             flex-direction: column;
@@ -36,7 +22,7 @@
             width: 80%;
             border-radius: 10px;
             padding: 1.5rem;
-            background-color: white;
+            background-color: #ffffffe6;
             box-shadow: 0 5px 15px rgb(196, 196, 196);
             display: flex;
             flex-direction: column;
@@ -91,34 +77,3 @@
             color: white;
             font-weight: bold;
         }
-    </style>
-
-    <form action="" method="post">
-        <img src="/Public/img/logo.svg" alt="logo" width="50px" height="50px">
-        <h1>clientes</h1>
-        <p>Bienvenido de vuelta! Inicia sesión para continuar.</p>
-        <div class="inputs">
-            <label for="email">Correo electronico *</label>
-            <input type="email" name="email" id="email" placeholder="tu@email.com">
-            <label for="password">Contraseña *</label>
-            <input type="password" name="password" id="password" placeholder="Tu contraseña">
-            <label for="view-pass"><input type="checkbox" name="view-pass" id="view-pass"> Mostrar contraseña.</label>
-            <input type="submit" value="Iniciar Sesión">
-        </div>
-    </form>
-
-</body>
-</html>
-
-<script>
-    let btnView = document.getElementById('view-pass');
-    let inPass = document.getElementById('password');
-
-    btnView.addEventListener('change', ()=>{
-        if(btnView.checked){
-            inPass.type = 'text';
-        }else{
-            inPass.type = 'password';
-        }
-    })
-</script>
