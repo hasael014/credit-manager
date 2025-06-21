@@ -9,9 +9,9 @@ h1 {
     line-height: 2.5rem;
 }
 
-section {
+/* section {
     padding: 1rem;
-}
+} */
 
 header,
 main {
@@ -33,6 +33,7 @@ header>section{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding: 4rem 1rem;
 }
 
 header>section>.icon{
@@ -57,20 +58,21 @@ header>section>.tager{
 main{
     padding: 1rem;
     border: solid 1px black;
+    gap: 1.5rem;
 }
 
 main>section{
-    width: 100%;
+    width: -webkit-fill-available;
     max-width: 56rem;
     box-shadow: 0 10px 15px rgba(128, 128, 128, 0.5);
-    backdrop-filter: blur(10px);
 }
 
-.data,.header-sec{
+.header-sec{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .header-sec>.info{
@@ -122,4 +124,16 @@ main>section{
     border-radius: 999px;
     border: solid 1px #a7f3d0;
     height: max-content
+}
+
+.resumen{
+    display: flex;
+    flex-direction: column;
+    & .header{
+        padding: 1rem;
+        background: linear-gradient(135deg, rgba(0, 217, 255, 0.315), rgba(24, 255, 3, 0.301));        
+    }
+    & .main{
+        padding: 1rem;
+    }
 }
