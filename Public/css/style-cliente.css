@@ -62,7 +62,7 @@ main{
 main>section{
     width: 100%;
     max-width: 56rem;
-    box-shadow: 0 10px 15px grey;
+    box-shadow: 0 10px 15px rgba(128, 128, 128, 0.5);
     backdrop-filter: blur(10px);
 }
 
@@ -76,9 +76,50 @@ main>section{
 .header-sec>.info{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.info>.profile-photo{
+    background: linear-gradient(135deg, rgb(0, 194, 145), rgb(0, 140, 255));
+    padding: 1rem;
+    height: 2rem;
+    width: 2rem;
+    font-weight: 900;
+    color: white;
+    border-radius: 999px;
+    margin-inline-end: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 3px 3px 5px black;
+}
+
+.profile-photo>span{
+    height: max-content;
+    font-size: 2rem;
+    text-shadow: 3px 3px 1px black;
 }
 
 .info>.info-data{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    & .name{
+        font-weight: 900;
+        font-size: 1.25rem;
+    }
+
+    & .email, .reference{
+        color: #374151;
+        font-size: 0.80rem;
+    }
+}
+
+.header-sec>.tag{
+    background-color: #ecfdf5;
+    color: #047857;
+    padding: .5rem;
+    border-radius: 999px;
+    border: solid 1px #a7f3d0;
+    height: max-content
 }
