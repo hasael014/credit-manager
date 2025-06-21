@@ -1,2 +1,2 @@
 # credit-manager
-app web con la que se pueda administrar los créditos de mis clientes
+App web con el que podrás gestionar y administrar los creditos que otrorgas a cada cliente, si tienes un negocio o empresa :)
